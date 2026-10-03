@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f7fb" />
+    <meta name="description" content="Eakawat Buanitisin is a third-year IoT and Information Engineering student interested in software engineering, web development, and connected systems." />
+    <title>Eakawat Buanitisin | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="projects.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="site-name" href="#top">Eakawat Buanitisin<span class="name-dot">.</span></a>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="intro-label">Hello, I'm Eakawat</p>
+            <h1 id="hero-title">I build software and connected systems.</h1>
+            <p class="hero-description">I'm a third-year IoT and Information Engineering student at KMITL. I enjoy turning practical ideas into working web and hardware projects, and I'm looking for a software engineering internship.</p>
+            <div class="hero-actions">
+              <a class="button" href="#projects">View my projects</a>
+              <a class="plain-link" href="mailto:aekawat.boom@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <img src="assets/images/portrait.webp" alt="Eakawat Buanitisin at a project exhibition" fetchpriority="high" />
+            <figcaption>Eakawat at a project exhibition</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="container about-layout">
+          <div class="section-heading"><span class="section-number">01 / ABOUT</span><h2 id="about-title">A little about me</h2></div>
+          <div class="about-body">
+            <p>I study IoT System and Information Engineering at King Mongkut's Institute of Technology Ladkrabang. My projects have taken me from frontend interfaces and APIs to microcontrollers, sensors, and computer vision.</p>
+            <p>I like learning how the pieces of a system fit together and making things people can actually use. I'm especially interested in growing as a software engineer through real team experience.</p>
+            <div class="quick-facts"><div><strong>3rd year</strong><span>Current year of study</span></div><div><strong>3.78 GPA</strong><span>Cumulative GPA</span></div><div><strong>2028</strong><span>Expected graduation</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading section-heading-row"><div><span class="section-number">02 / PROJECTS</span><h2 id="projects-title">Selected projects</h2></div><p>A few things I've worked on during university.</p></div>
+          <div class="project-filters" role="group" aria-label="Filter projects">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter-button" type="button" data-filter="iot" aria-pressed="false">IoT & embedded</button>
+            <button class="filter-button" type="button" data-filter="3d" aria-pressed="false">3D</button>
+          </div>
+          <div class="project-grid">
+            <article class="project-card" data-category="web" data-project="iote-website">
+              <div class="project-image project-image-placeholder"><span class="placeholder-small">WEB PROJECT / 2026</span><span class="placeholder-title">IoTE Website</span><span class="placeholder-line"></span></div>
+              <div class="project-content"><div class="project-title-line"><h3>IoTE Website</h3><span>2026</span></div><p>Designed a responsive department portal and discussion interface, with interactive components and asynchronous API integration.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span></div><button class="project-open" type="button" data-project="iote-website" aria-label="View details for IoTE Website">View project details <span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article class="project-card" data-category="iot" data-project="easy-park">
+              <img class="project-image" src="assets/images/easy-park.webp" alt="License plate recognition interface for the Easy Park project" loading="lazy" />
+              <div class="project-content"><div class="project-title-line"><h3>Easy Park</h3><span>2025</span></div><p>Built an automated parking payment and gate system using Raspberry Pi, sensors, license plate recognition, and OCR.</p><div class="tags"><span>Raspberry Pi</span><span>Python</span><span>YOLO / OCR</span></div><button class="project-open" type="button" data-project="easy-park" aria-label="View details for Easy Park">View project details <span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article class="project-card" data-category="3d" data-project="digital-twin">
+              <img class="project-image" src="assets/images/digital-twin.webp" alt="3D campus model for the KMITL Digital Twin project" loading="lazy" />
+              <div class="project-content"><div class="project-title-line"><h3>KMITL Digital Twin</h3><span>Ongoing</span></div><p>Creating a 3D model of the KMITL campus with Blender and BlenderGIS as a foundation for future sensor data integration.</p><div class="tags"><span>Blender</span><span>BlenderGIS</span><span>3D modeling</span></div><button class="project-open" type="button" data-project="digital-twin" aria-label="View details for KMITL Digital Twin">View project details <span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article class="project-card" data-category="iot" data-project="smart-parking">
+              <img class="project-image" src="assets/images/smart-parking.webp" alt="Physical prototype of the smart parking monitoring system" loading="lazy" />
+              <div class="project-content"><div class="project-title-line"><h3>Smart Parking System</h3><span>2024</span></div><p>Made a parking monitor with Arduino R4 WiFi and ultrasonic sensors that detects improper positioning and sends alerts.</p><div class="tags"><span>Arduino</span><span>Node-RED</span><span>Blynk</span></div><button class="project-open" type="button" data-project="smart-parking" aria-label="View details for Smart Parking System">View project details <span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article class="project-card" data-category="iot" data-project="appliance-scheduler">
+              <img class="project-image" src="assets/images/timer-controller.webp" alt="ESP32 appliance scheduling controller with display and buttons" loading="lazy" />
+              <div class="project-content"><div class="project-title-line"><h3>Appliance Scheduler</h3><span>2025</span></div><p>Built an ESP32 controller that switches electrical devices on and off at set times using an RTC, relay, LCD, and buttons.</p><div class="tags"><span>ESP32</span><span>C / C++</span><span>Embedded</span></div><button class="project-open" type="button" data-project="appliance-scheduler" aria-label="View details for Appliance Scheduler">View project details <span aria-hidden="true">↗</span></button></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading"><span class="section-number">03 / SKILLS</span><h2 id="skills-title">What I work with</h2></div>
+          <div class="skills-grid">
+            <div class="skill-group"><h3>Web & apps</h3><p>HTML, CSS, JavaScript, responsive UI, REST APIs, Flutter, Figma</p></div>
+            <div class="skill-group"><h3>Programming</h3><p>Python, C/C++, SQL, Git, GitHub</p></div>
+            <div class="skill-group"><h3>IoT & hardware</h3><p>Arduino, ESP32, Raspberry Pi, Blynk, Node-RED</p></div>
+            <div class="skill-group"><h3>Other tools</h3><p>Blender, BlenderGIS, pre-trained YOLO and OCR basics</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading"><span class="section-number">04 / EXPERIENCE</span><h2 id="experience-title">Outside the classroom</h2></div>
+          <div class="experience-list">
+            <article class="experience-item"><img src="assets/images/smart-meter.webp" alt="Working on smart meter hardware assembly" loading="lazy" /><div><span class="item-type">PROJECT ASSISTANCE · 2025</span><h3>Smart Meter Assembly</h3><p>Helped a faculty-led smart meter project with PCB soldering and installing completed boards into enclosures under instructor guidance.</p></div></article>
+            <article class="experience-item"><img src="assets/images/camp-mentoring.webp" alt="Helping a student during a KMITL camp activity" loading="lazy" /><div><span class="item-type">STUDENT ACTIVITIES · 2024</span><h3>Academic Staff & Photographer</h3><p>Prepared exam practice materials, guided high school students during camp activities, and photographed the events.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout"><div><span class="section-number">05 / CONTACT</span><h2 id="contact-title">Let's talk.</h2><p>I'm currently looking for a software engineering internship. If you'd like to discuss an opportunity or a project, feel free to reach out.</p></div><div class="contact-links"><a class="button" href="mailto:aekawat.boom@gmail.com?subject=Internship%20opportunity">Email me <span aria-hidden="true">↗</span></a><a class="plain-link" href="https://github.com/BoomEakawat" target="_blank" rel="noopener noreferrer">View my GitHub <span aria-hidden="true">↗</span></a><span>Lam Luk Ka, Pathum Thani, Thailand</span></div></div>
+      </section>
+    </main>
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+        <div class="dialog-gallery">
+          <div class="dialog-image-wrap"><img class="dialog-image" alt="" /><div class="dialog-placeholder" hidden><span>PROJECT / WEB</span><strong>IoTE Website</strong></div></div>
+          <div class="gallery-controls"><button class="gallery-prev" type="button" aria-label="Previous image">←</button><span class="gallery-count" aria-live="polite"></span><button class="gallery-next" type="button" aria-label="Next image">→</button></div>
+          <p class="gallery-caption"></p>
+        </div>
+        <div class="dialog-content"><span class="dialog-meta"></span><h2 id="dialog-title"></h2><p class="dialog-summary"></p><h3>What I worked on</h3><ul class="dialog-points"></ul><h3>Tools & technologies</h3><div class="dialog-tags tags"></div></div>
+      </div>
+    </dialog>
+    <footer class="site-footer"><div class="container footer-inner"><span>© <span id="year">2026</span> Eakawat Buanitisin</span><a href="#top">Back to top ↑</a></div></footer>
+  </body>
+</html>
