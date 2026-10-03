@@ -1,0 +1,1 @@
+Project and activity photos were extracted from the portfolio PDF supplied for this website and converted to WebP for faster loading. The IoTE Website has no source screenshot, so its project card uses a text placeholder.
